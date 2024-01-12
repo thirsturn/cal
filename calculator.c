@@ -35,7 +35,29 @@ int main(int argc, char const *argv[])
     scanf("%f", &n1);
     scanf("%f", &n2);
     
+    switch (op)
+    {
+    case '+':
+        ans = addition(n1, n2);
+        printf("%f", ans);
+        break;
+
+    case '-':
+        float ans = subtraction(n1, n2);
+        printf("%f", ans);
+
+    case '*':
+        float ans = Multiplication(n1, n2);
+        printf("%f", ans);
+
+    case '/':
+        float ans = Division(n1, n2);
+        printf("%f", ans);
     
+    default:
+        printf("invalid operator");
+        break;
+    }
     
     
 
